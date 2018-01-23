@@ -1,0 +1,112 @@
+<!--Fabrice GOEH-AKUE-->
+<!-- Code inspired by hello-boostrap.html -->
+
+<!DOCTYPE html>   <!--Specifying HTML 5-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>My Favorite Program</title>
+
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <!-- Link to  bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Link my CSS style file -->
+    <link rel="stylesheet" type="text/css" href="programstyle.css">
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+    <!-- The first row-->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="jumbotron">
+                <h1>Character Analysis <span class="glyphicon glyphicon-pencil"/></h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- The second row-->
+    <div class="row">
+
+        <div class="col-sm-6">
+            <h3><span class="glyphicon glyphicon-blackboard"/> <u>Program Description</u></h3>
+
+            <p>
+                This program reads a .txt file’s contents and determines the following:
+                </br>• The number of uppercase letters in the file
+                </br>• The number of lowercase letters in the file
+                </br>• The number of digits in the file
+                </br>• The number of whitespace characters in the file
+            </p>
+
+            <p></br>A capture of my code:</p>
+            <img src='SnapMyCode.jpg' >
+
+            <p></br>A capture of the result:</p>
+            <img src='SnapMyResult.jpg' >
+
+        </div>
+
+        <div class="col-sm-6">
+
+            <h3><span class="glyphicon glyphicon-floppy-disk"/> <u>Code samples</u></h3>
+
+            <p>Open the file the program to read.</p>
+            <pre><code>
+                # open the file
+                file_text = open('text.txt', 'r')
+                # read the text file in the list
+                text = file_text.read()
+                # Close the file
+                file_text.close()
+            </code></pre>
+
+            <p>Create the variables we will use as accumulators.</p>
+            <pre><code>
+                # Initialise accumulators for each type of character
+                total_uppercase = 0
+                total_lowercase = 0
+                total_digit = 0
+                total_whitespace = 0
+            </code></pre>
+
+            <p>Use a loop to go through the text.</p>
+            <pre><code>
+                # loop to count character through the text
+                for char in text:
+                    if char.isupper():
+                        total_uppercase += 1
+                    elif char.islower():
+                        total_lowercase += 1
+                    elif char.isdigit():
+                        total_digit += 1
+                    elif char.isspace():  # will count white spaces, \n, \t
+                        total_whitespace += 1
+            </code></pre>
+
+            <p>The part of the code that display the result.</p>
+            <pre><code>
+                # display the number of each type of character
+                print('•The number of uppercase letters in the file is ',total_uppercase,'.', sep='')
+                print('•The number of lowercase letters in the file is ',total_lowercase,'.', sep='')
+                print('•The number of digits in the file is ',total_digit,'.', sep='')
+                print('•The number of whitespace characters in the file is ',total_whitespace,'.', sep='')
+            </code></pre>
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
+

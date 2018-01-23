@@ -1,0 +1,29 @@
+/* Fabrice GOEH-AKUE */
+/* Style for My favoriteprogram.html file */
+
+p {
+	color: blue;
+}
+
+h1{
+	text-align: center;
+}
+
+body{
+	background-color: azure;
+}
+
+code {
+	font-family: "Calibri Light";
+}
+
+img {
+	border: 1px cornflowerblue dashed;
+	width: 500px;
+}
+
+.jumbotron{
+	background: url('ocean.jpg') center center;
+	color: white;
+	text-shadow: 2px 2px black
+}

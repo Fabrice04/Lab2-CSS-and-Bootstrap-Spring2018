@@ -1,0 +1,90 @@
+/* Fabrice GOEH-AKUE*/
+/* Style for My favorite.html file */
+p {
+	color: blue;
+}
+
+h1{
+	color: orange;
+	background-color: lightblue;
+	text-align: center;
+}
+
+h2{
+	color: deeppink;
+}
+
+body{
+	background-color: lightgrey;
+}
+
+ul{
+	color: blue;
+}
+
+img {
+	border: 6px green double;
+	}
+
+/* Set borders for my table */
+table {
+	border-collapse: collapse;
+}
+table, th, td{
+	border: 2px solid darkblue ;
+	padding: 5px;
+	text-align: left;
+}
+
+/* Set different colors for my table's header and the data */
+th{
+	color: dodgerblue;
+}
+
+td{
+	color: darksalmon;
+}
+
+/* ID attributes style section */
+#favorite-movie-title {
+	background-color: grey;
+	font-style: italic;
+	color: cornflowerblue;
+}
+
+#favorite-music-artist-name{
+	font-weight: bold;
+	color: brown;
+}
+
+#most-favorite-food{
+	font-weight: bold;
+}
+
+#most-favorite-food1{
+	background-color: chartreuse;
+}
+
+/* Class attributes style section */
+.favorite-section {
+	border: 2px purple solid;
+	padding: 5px;
+	margin: 10px;
+}
+
+.section-header{
+	font-style: italic;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+.favorite-image {
+	border-radius: 10%;
+}
+
+.jumbotron{
+	/*background: yellow;*/
+	background: url('ocean.jpg') center center;
+	color: white;
+	text-shadow: 2px 2px black
+}
