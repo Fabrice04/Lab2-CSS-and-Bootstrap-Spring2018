@@ -65,6 +65,12 @@ td{
 	background-color: chartreuse;
 }
 
+#favorite-program{
+	background-color: navy;
+	font-style: italic;
+	color: antiquewhite;
+}
+
 /* Class attributes style section */
 .favorite-section {
 	border: 2px purple solid;
@@ -80,11 +86,4 @@ td{
 
 .favorite-image {
 	border-radius: 10%;
-}
-
-.jumbotron{
-	/*background: yellow;*/
-	background: url('ocean.jpg') center center;
-	color: white;
-	text-shadow: 2px 2px black
 }
